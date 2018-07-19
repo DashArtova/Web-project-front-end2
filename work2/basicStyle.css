@@ -1,0 +1,27 @@
+body{
+    padding: 10px;
+    font-family: 'PT Sans Regular', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0;
+    padding: 0;
+    margin-left: 10%;
+}
+@font-face {
+  font-family: 'PT Sans Regular';
+  src: url('fonts/PTSans-Regular.eot');
+  src: url('fonts/PTSans-Regular.woff') format('woff'),
+       url('fonts/PTSans-Regular.ttf')  format('truetype')
+}
+@font-face {
+  font-family: 'PT Sans Italic';
+  src: url('fonts/PTSans-Italic.eot');
+  src: url('fonts/PTSans-Italic.woff') format('woff'),
+       url('fonts/PTSans-Italic.ttf')  format('truetype')
+}
+@font-face {
+  font-family: 'PT Sans Bold';
+  src: url('fonts/PTSans-Bold.eot');
+  src: url('fonts/PTSans-Bold.woff') format('woff'),
+       url('fonts/PTSans-Bold.ttf')  format('truetype')
+}

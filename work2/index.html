@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title></title>
+        <link href = "indexStyle.css" type="text/css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+        <script src = "jquery-3.2.1.min.js"></script>
+    </head>
+    <body>
+        <div id = "content">
+            <div id ="container">
+                <div class = "slider fade">
+                    <img src = "img/sliderCake1.png"/>
+                </div>
+                <div class = "slider fade">
+                    <img src = "img/sliderCake2.png"/>
+                </div>
+                <div class = "slider fade">
+                    <img src = "img/sliderCake3.png"/>
+                </div>
+                <div class = "slider fade">
+                    <img src = "img/sliderCake4.png"/>
+                </div>
+                <div class = "slider fade">
+                    <img src = "img/sliderCake5.png"/>
+                </div>
+                <div class = "slider fade">
+                    <img src = "img/sliderCake6.png"/>
+                </div>
+            </div>
+            <script>
+                window.onload = function(){
+                    var slideIndex = 1;                    
+                    showSlides(slideIndex);
+                    
+                    function showSlides(n){
+                        var slides = document.getElementsByClassName("slider");
+                        if(slideIndex > slides.length)
+                            slideIndex = 1;
+                        for(var i = 0; i < slides.length; i++)
+                            slides[i].style.display = "none";
+                        slides[slideIndex-1].style.display = "block";
+                        slideIndex++;
+                        setTimeout(showSlides, 4000);
+                    }
+               }
+            </script>
+        </div>
+    </body>
+</html>
